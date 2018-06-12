@@ -8,14 +8,32 @@ fw = ["Swift", "Unceasing", "Vengeful", "Lone", "Cold", "Hot", "Purple", "Brutal
 rln =random.randrange(0, 75)
 lw = [" Engine", " Chant", " Heart", " Justice", " Law", " Thunder", " Moon", " Heat", " Fear", " Star", " Apollo", " Prophet", " Hero", " Hydra", " Serpent", " Crown", " Thorn", " Empire", " Line", " Fall", " Summer", " Druid", " God", " Savior", " Stallion", " Hawk", " Vengeance", " Calm", " Knife", " Sword", " Dream", " Sleep", " Stroke", " Flame", " Spark", " Fist", " Dirge", " Grave", " Shroud", " Breath", " Smoke", " Giant", " Whisper", " Night", " Throne", " Pipe", " Blade", " Daze", " Pyre", " Tears", " Mother", " Crone", " King", " Father", " Priest", " Dawn", " Hammer", " Shield", " Hymn", " Vanguard", " Sentinel", " Stranger", " Bell", " Mist", " Fog", " Jester", " Scepter", " Ring", " Skull", " Paramour", " Palace", " Mountain", " Rain", " Gaze", " Future", " Gift"]
 
-print("Operation " + '"' + (fw[rfn]) + (lw[rln]) + '"')
+opname = (fw[rfn]) + (lw[rln])
 
 #missiontypes
 
 rmt = random.randrange(0, 7)
 mt = ["Alien Abductions", "Alien Base Assault", "Council Mission", "Temple Ship Assault", "Alien Terror Attack", "UFO Crash Site", "UFO Landing Site"]
 
-print((mt[rmt]))
+optype = (mt[rmt])
+
+if rmt == 3:
+    opname = "Avenger"
+    
+print("Operation " + '"' + (opname) + '"')
+
+print(optype)
+
+#missiondetails
+
+rml = random.randrange(0, 15)
+cl = ["USA", "Canada", "France", "United Kingdom", "Germany", "Nigeria", "Egypt", "South Africa", "China", "Japan", "India", "Australia", "Brazil", "Argentina", "Mexico", "Russia"]
+
+rpl = random.randrange(0, 4) #paniclevel
+
+oplocation = (cl[rml])
+
+print(oplocation)
 
 #tacticaltips
 
