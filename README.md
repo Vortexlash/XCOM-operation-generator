@@ -1,2 +1,4 @@
-# XCOM-operation-generator
-A mechanically accurate generator of operation names and details using the Lib/random.py
+# XCOM_operation_generator
+### June, 2018.
+
+A mechanically accurate generator of operation names and details using the XComStrategyGame.int and Lib/random.py<br/>
